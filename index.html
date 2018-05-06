@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="home">
     <section class="hero">
         <div class="container">
             <header>
-                <div class="menu-header">
+                <div class="menu-header clearfix">
                     <div class="logo">
                         <a href="#"> <img src="images/logogolden.png" alt="Golden"></a>
                     </div>
+                    <label for="toggle">&#9776;</label>
+                    <input type="checkbox" id="toggle" />
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </header>
@@ -34,7 +36,7 @@
             </div>
         </div>
     </section>
-    <section class="Services">
+    <section class="Services" id="services">
         <div class="container">
             <div class="title-section">
                 <h2>Services</h2>
@@ -68,14 +70,12 @@
             </div>
         </div>
     </section>
-    <section class="Portfolio section">
+    <section class="Portfolio" id="portfolio">
         <div class="container">
             <div class="title-section">
                 <h2>Our Portfolio</h2>
                 <h3>Proin iaculis purus consequat sem cure.</h3>
             </div>
-        </div>
-        <div class="row">
             <div class="Portfolio1">
                 <div class="picture">
                     <img src="images/gallery1.png" alt="Ebony-Ivory">
@@ -123,10 +123,10 @@
             </div>
         </div>
     </section>
-    <section class="about US section">
+    <section class="about-us" id="about">
         <div class="container">
             <div class="title-section">
-                <h2>Contact Us</h2>
+                <h2>About Us</h2>
                 <h3>aculis purus consequat sem cure.</h3>
             </div>
             <div class="timeline timeline-left">
@@ -219,7 +219,7 @@
         <div class="container">
             <div class="flex-team">
                 <div class="flex-worker">
-                    <img src="images/team-black.png">
+                    <img src="images/Img_team_1.png">
                     <h1>Kimberly Thompson</h1>
                     <h4>Marketer</h4>
                     <div class="Socialmedia">
@@ -235,7 +235,7 @@
                     </div>
                 </div>
                 <div class="flex-worker">
-                    <img src="images/team-black.png">
+                    <img src="images/Img_team_2.png">
                     <h1>Rico Massirno</h1>
                     <h4>Coder</h4>
                     <div class="Socialmedia">
@@ -251,7 +251,7 @@
                     </div>
                 </div>
                 <div class="flex-worker">
-                    <img src="images/team-black.png">
+                    <img src="images/Img_team_3.png">
                     <h1>Uku Mason</h1>
                     <h4>Graphic Designer</h4>
                     <div class="Socialmedia">
@@ -288,7 +288,7 @@
             </div>
         </div>
     </section>
-    <section class="Contact-us">
+    <section class="Contact-us" id="contact">
         <div class="container">
             <h1 class="text-top">Contact Us</h1>
             <p class="text-bottom">Proin iaculis purus consequat sem cure</p>
@@ -308,36 +308,39 @@
                     </div>
                 </div>
                 <div class="form-submit">
-                    <input class="btn hvr-outline-in" type="submit" value="Send Message">
+                    <input class="btn" type="submit" value="Send Message">
                 </div>
             </form>
         </div>
     </section>
+    <div class='scrolltop'>
+        <div class='scroll icon'><i class="fa fa-4x fa-angle-up "></i></div>
+    </div>
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-4">
+            <div class="contact2">
+                <div class="author">
                     <p>&copy; Copyright 2014 FreebiesXpress.com</p>
                 </div>
-                <div class="col-8">
-                    <div class="Social-Media-footer">
-                        <button class="icon-btn twitter">
-                            <i class="fa fa-twitter"></i>
-                        </button>
-                        <button class="icon-btn facebook">
-                            <i class="fa fa-facebook"></i>
-                        </button>
-                        <button class="icon-btn pinterest ">
-                            <i class="fa fa-pinterest"></i>
-                        </button>
-                        <button class="icon-btn google-plus">
-                            <i class="fa fa-google-plus"></i>
-                        </button>
-                    </div>
+                <div class="Social-Media-footer">
+                    <button class="icon-btn twitter">
+                        <i class="fa fa-twitter"></i>
+                    </button>
+                    <button class="icon-btn facebook">
+                        <i class="fa fa-facebook"></i>
+                    </button>
+                    <button class="icon-btn pinterest ">
+                        <i class="fa fa-pinterest"></i>
+                    </button>
+                    <button class="icon-btn google-plus">
+                        <i class="fa fa-google-plus"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js "></script>
 </body>
 
 </html>
