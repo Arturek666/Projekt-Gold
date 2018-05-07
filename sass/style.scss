@@ -47,7 +47,7 @@ body {
     header {
         .menu-header {
             display: flex;
-            padding: 50px;
+            padding-top: 50px;
             align-items: center;
             .logo {
                 display: flex;
@@ -593,6 +593,7 @@ body {
 .contact2 {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     .author {
         display: flex;
         justify-content: flex-start;
@@ -605,8 +606,8 @@ body {
     }
 
     .Social-Media-footer {
-        padding: 10px 0px 10px 95px;
         display: flex;
+        justify-content: center;
         .icon-btn {
             width: 39px;
             height: 39px;

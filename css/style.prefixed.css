@@ -38,7 +38,7 @@ body {
 .hero header .menu-header {
   display: -ms-flexbox;
   display: flex;
-  padding: 50px;
+  padding-top: 50px;
   -ms-flex-align: center;
       align-items: center;
 }
@@ -629,6 +629,8 @@ body {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .contact2 .author {
@@ -646,9 +648,10 @@ body {
 }
 
 .contact2 .Social-Media-footer {
-  padding: 10px 0px 10px 95px;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .contact2 .Social-Media-footer .icon-btn {
