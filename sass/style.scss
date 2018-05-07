@@ -244,7 +244,10 @@ body {
 
     .Portfolio1 {
         display: flex;
+        justify-content: space-between;
+        flex-flow: row;
         flex-wrap: wrap;
+        margin-top: 80px;
 
         img {
             width: 290px;
@@ -257,15 +260,18 @@ body {
             }
         }
         .picture {
-            width: 33.3334%;
-            padding: 0 18px;
-            &:last-child {
-                margin-bottom: 70px;
-            }
+            max-width: 290px;
+            max-height: 393px;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            overflow: hidden;
             .title-services {
                 background-color: white;
-                height: auto;
+                text-align: center;
                 width: 290px;
+                margin: auto 0;
 
 
 
@@ -276,7 +282,7 @@ body {
                     text-align: center;
                     margin-top: 0;
                     margin-bottom: 0;
-                    padding-top: 10px;
+                    padding-top: 20px;
                 }
                 p {
                     font-size: 14px;
@@ -285,7 +291,7 @@ body {
                     font-style: italic;
                     text-align: center;
                     padding-bottom: 15px;
-                    margin-bottom: 50px;
+
                     margin-top: 0;
                 }
             }
@@ -683,6 +689,7 @@ body {
 
 @media(max-width: 991px) {
     .hero {
+        height: auto;
         header {
             .menu-header {
                 display: block;
@@ -715,6 +722,7 @@ body {
                     display: flex;
                     flex-direction: column;
                     display: none;
+                    padding-left: 0;
                     li {
                         display: block;
                         width: 100%;
@@ -735,27 +743,24 @@ body {
             }
         }
         .text-hero {
+            h3 {
+                padding-top: 50px;
+                margin-top: 0;
+                font-size: 40px;
+            }
             h2 {
-                font-size: 60px;
+                font-size: 50px;
+            }
+        }
+        .button-hero {
+            button {
+                margin-bottom: 80px;
+                margin-top: 40px;
             }
         }
     }
-    .Portfolio {
-        .Portfolio1 {
-            margin-left: 10%;
-            .picture {
-
-                width: 50%;
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 40px;
-                .title-services {
-                    p {
-                        margin-bottom: 0;
-                    }
-                }
-            }
-        }
+    #portfolio .Portfolio1 {
+        justify-content: space-around;
     }
     #about .timeline-left,
     #about .timeline-right {
@@ -775,26 +780,23 @@ body {
             }
         }
     }
-    .Portfolio {
+    #portfolio {
+        padding-bottom: 60px;
         .Portfolio1 {
-
-            .picture {
-                text-align: center;
-                width: 100%;
-                margin-left: calc(41% - 145px);
-            }
+            justify-content: center;
         }
     }
     #about {
-        .section-title {
-            margin-bottom: 60px;
-        }
+
         .timeline-right,
         .timeline-left {
             justify-content: center;
         }
         .timeline {
             margin: 20px 0;
+            &:last-child {
+                margin-bottom: 100px;
+            }
             .timeline-box .timeline-image-line {
                 display: none;
             }
@@ -814,6 +816,10 @@ body {
                     font-size: 30px;
                 }
             }
+        }
+        .worker-para {
+            margin: 0 10px;
+            padding-bottom: 60px;
         }
     }
     .Banners-section {
@@ -836,6 +842,18 @@ body {
                     input {
                         width: calc(100% - 28px);
                     }
+                }
+                .textarea-contact {
+                    textarea {
+                        height: 220px;
+                        width: calc(100% - 28px);
+                    }
+                }
+            }
+            .form-submit {
+                input {
+                    margin-top: 30px;
+                    margin-bottom: 60px;
                 }
             }
         }

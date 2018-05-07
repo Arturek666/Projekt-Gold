@@ -221,7 +221,10 @@ body {
 
 .Portfolio .Portfolio1 {
   display: flex;
+  justify-content: space-between;
+  flex-flow: row;
   flex-wrap: wrap;
+  margin-top: 80px;
 }
 
 .Portfolio .Portfolio1 img {
@@ -237,18 +240,20 @@ body {
 }
 
 .Portfolio .Portfolio1 .picture {
-  width: 33.3334%;
-  padding: 0 18px;
-}
-
-.Portfolio .Portfolio1 .picture:last-child {
-  margin-bottom: 70px;
+  max-width: 290px;
+  max-height: 393px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
 }
 
 .Portfolio .Portfolio1 .picture .title-services {
   background-color: white;
-  height: auto;
+  text-align: center;
   width: 290px;
+  margin: auto 0;
 }
 
 .Portfolio .Portfolio1 .picture .title-services h1 {
@@ -258,7 +263,7 @@ body {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .Portfolio .Portfolio1 .picture .title-services p {
@@ -268,7 +273,6 @@ body {
   font-style: italic;
   text-align: center;
   padding-bottom: 15px;
-  margin-bottom: 50px;
   margin-top: 0;
 }
 
@@ -678,6 +682,9 @@ body {
 }
 
 @media (max-width: 991px) {
+  .hero {
+    height: auto;
+  }
   .hero header .menu-header {
     display: block;
     padding: 0;
@@ -707,6 +714,7 @@ body {
     display: flex;
     flex-direction: column;
     display: none;
+    padding-left: 0;
   }
   .hero header .menu-header ul li {
     display: block;
@@ -723,20 +731,20 @@ body {
     margin-top: 50px;
     display: block;
   }
+  .hero .text-hero h3 {
+    padding-top: 50px;
+    margin-top: 0;
+    font-size: 40px;
+  }
   .hero .text-hero h2 {
-    font-size: 60px;
+    font-size: 50px;
   }
-  .Portfolio .Portfolio1 {
-    margin-left: 10%;
+  .hero .button-hero button {
+    margin-bottom: 80px;
+    margin-top: 40px;
   }
-  .Portfolio .Portfolio1 .picture {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-  }
-  .Portfolio .Portfolio1 .picture .title-services p {
-    margin-bottom: 0;
+  #portfolio .Portfolio1 {
+    justify-content: space-around;
   }
   #about .timeline-left,
   #about .timeline-right {
@@ -752,13 +760,11 @@ body {
     width: 100%;
     margin: 0 auto;
   }
-  .Portfolio .Portfolio1 .picture {
-    text-align: center;
-    width: 100%;
-    margin-left: calc(41% - 145px);
+  #portfolio {
+    padding-bottom: 60px;
   }
-  #about .section-title {
-    margin-bottom: 60px;
+  #portfolio .Portfolio1 {
+    justify-content: center;
   }
   #about .timeline-right,
   #about .timeline-left {
@@ -766,6 +772,9 @@ body {
   }
   #about .timeline {
     margin: 20px 0;
+  }
+  #about .timeline:last-child {
+    margin-bottom: 100px;
   }
   #about .timeline .timeline-box .timeline-image-line {
     display: none;
@@ -782,6 +791,10 @@ body {
   .Team .flex-team .flex-worker h1 {
     font-size: 30px;
   }
+  .Team .worker-para {
+    margin: 0 10px;
+    padding-bottom: 60px;
+  }
   .Banners-section .flex-banner div {
     width: 100%;
     display: flex;
@@ -797,6 +810,14 @@ body {
   }
   .Contact-us form .flex-form .contact-flex input {
     width: calc(100% - 28px);
+  }
+  .Contact-us form .flex-form .textarea-contact textarea {
+    height: 220px;
+    width: calc(100% - 28px);
+  }
+  .Contact-us form .form-submit input {
+    margin-top: 30px;
+    margin-bottom: 60px;
   }
   footer .contact2 {
     display: flex;
