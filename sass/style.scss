@@ -691,6 +691,7 @@ body {
                     margin: auto 0;
                     display: inline-block;
                     align-items: center;
+                    margin: 20px 0 0 40px;
 
                     img {
                         margin-top: 20px;
@@ -704,6 +705,7 @@ body {
                     transition: 0.6s;
                     float: right;
                     font-size: 40px;
+                    margin: 20px 40px 0 0;
                     &:hover {
                         color: $goldenColor;
                     }
@@ -755,13 +757,20 @@ body {
             }
         }
     }
+    #about .timeline-left,
+    #about .timeline-right {
+        justify-content: center;
+    }
+    .line {
+        display: none;
+    }
 }
 
 @media (max-width: 640px) {
     .Services {
         .Services1 {
             .service {
-                max-width: 100%;
+                width: 100%;
                 margin: 0 auto;
             }
         }
@@ -770,9 +779,29 @@ body {
         .Portfolio1 {
 
             .picture {
-                display: flex;
-                justify-content: center;
+                text-align: center;
                 width: 100%;
+                margin-left: calc(41% - 145px);
+            }
+        }
+    }
+    #about {
+        .section-title {
+            margin-bottom: 60px;
+        }
+        .timeline-right,
+        .timeline-left {
+            justify-content: center;
+        }
+        .timeline {
+            margin: 20px 0;
+            .timeline-box .timeline-image-line {
+                display: none;
+            }
+            .timeline-text h4,
+            .timeline-text p {
+                text-align: center;
+                padding: 0 50px;
             }
         }
     }
@@ -797,12 +826,28 @@ body {
         }
     }
     .Contact-us {
+        width: auto;
         form {
             .flex-form {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                .contact-flex {}
+                .contact-flex {
+                    input {
+                        width: calc(100% - 28px);
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .contact2 {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+
+            .Social-Media-footer {
+                margin-right: 18%;
             }
         }
     }

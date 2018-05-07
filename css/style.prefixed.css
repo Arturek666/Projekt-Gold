@@ -734,6 +734,7 @@ body {
     display: inline-block;
     -ms-flex-align: center;
         align-items: center;
+    margin: 20px 0 0 40px;
   }
   .hero header .menu-header .logo img {
     margin-top: 20px;
@@ -745,6 +746,7 @@ body {
     transition: 0.6s;
     float: right;
     font-size: 40px;
+    margin: 20px 40px 0 0;
   }
   .hero header .menu-header label:hover {
     color: #fed136;
@@ -788,19 +790,44 @@ body {
   .Portfolio .Portfolio1 .picture .title-services p {
     margin-bottom: 0;
   }
+  #about .timeline-left,
+  #about .timeline-right {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .line {
+    display: none;
+  }
 }
 
 @media (max-width: 640px) {
   .Services .Services1 .service {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
   }
   .Portfolio .Portfolio1 .picture {
-    display: -ms-flexbox;
-    display: flex;
+    text-align: center;
+    width: 100%;
+    margin-left: calc(41% - 145px);
+  }
+  #about .section-title {
+    margin-bottom: 60px;
+  }
+  #about .timeline-right,
+  #about .timeline-left {
     -ms-flex-pack: center;
         justify-content: center;
-    width: 100%;
+  }
+  #about .timeline {
+    margin: 20px 0;
+  }
+  #about .timeline .timeline-box .timeline-image-line {
+    display: none;
+  }
+  #about .timeline .timeline-text h4,
+  #about .timeline .timeline-text p {
+    text-align: center;
+    padding: 0 50px;
   }
   .Team .flex-team .flex-worker {
     width: 100%;
@@ -816,6 +843,9 @@ body {
     -ms-flex-pack: center;
         justify-content: center;
   }
+  .Contact-us {
+    width: auto;
+  }
   .Contact-us form .flex-form {
     display: -ms-flexbox;
     display: flex;
@@ -823,6 +853,19 @@ body {
         flex-direction: column;
     -ms-flex-pack: center;
         justify-content: center;
+  }
+  .Contact-us form .flex-form .contact-flex input {
+    width: calc(100% - 28px);
+  }
+  footer .contact2 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin: 0 auto;
+  }
+  footer .contact2 .Social-Media-footer {
+    margin-right: 18%;
   }
 }
 /*# sourceMappingURL=style.prefixed.css.map */
