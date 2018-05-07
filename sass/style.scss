@@ -531,7 +531,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 input {
-                    width: 460px;
+                    width: 30vw;
                     margin: 14px;
                     height: 54px;
                     border: 1px solid rgb(204, 204, 204);
@@ -560,7 +560,7 @@ body {
                     border-radius: 5px;
                     background-color: rgb(255, 255, 255);
                     border: 1px solid rgb(204, 204, 204);
-                    width: 459px;
+                    width: 30vw;
                     height: 220px;
                     margin: 0 14px;
                     font-size: 24px;
@@ -728,6 +728,7 @@ body {
                         width: 100%;
                         border-bottom: 1px solid $goldenColor;
                         padding: 10px 0;
+
                         a {
                             text-align: center;
                             display: block;
@@ -769,9 +770,40 @@ body {
     .line {
         display: none;
     }
+    .Contact-us {
+        width: auto;
+        form {
+            .flex-form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .contact-flex {
+                    margin: 0 auto;
+                    input {
+                        width: 50vw;
+                    }
+                }
+                .textarea-contact {
+                    margin: 0 auto;
+                    textarea {
+                        height: 220px;
+                        width: 50vw;
+                    }
+                }
+            }
+            .form-submit {
+                input {
+                    margin-top: 30px;
+                    margin-bottom: 60px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 640px) {
+
+
     .Services {
         .Services1 {
             .service {
@@ -812,6 +844,7 @@ body {
             .flex-worker {
                 width: 100%;
                 text-align: center;
+                margin-bottom: 20px;
                 h1 {
                     font-size: 30px;
                 }
@@ -832,32 +865,26 @@ body {
         }
     }
     .Contact-us {
-        width: auto;
+
         form {
             .flex-form {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+
                 .contact-flex {
+                    margin: 0 auto;
                     input {
-                        width: calc(100% - 28px);
+                        width: 80vw;
                     }
                 }
                 .textarea-contact {
+                    margin: 0 auto;
                     textarea {
-                        height: 220px;
-                        width: calc(100% - 28px);
+                        width: 80vw;
                     }
-                }
-            }
-            .form-submit {
-                input {
-                    margin-top: 30px;
-                    margin-bottom: 60px;
                 }
             }
         }
     }
+
     footer {
         .contact2 {
             display: flex;
@@ -867,6 +894,33 @@ body {
             .Social-Media-footer {
                 margin-right: 18%;
             }
+        }
+    }
+}
+
+@media(max-width: 420px) {
+    .title-section {
+        h2 {
+
+            font-size: 34px;
+            font-family: $montFont;
+            color: rgb(34, 34, 34);
+            text-transform: uppercase;
+            line-height: 1.875;
+            text-align: center;
+            padding-top: 60px;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-family: $robotoFont;
+            color: rgb(119, 119, 119);
+            font-style: italic;
+            line-height: 1.2;
+            text-align: center;
+            padding-bottom: 40px;
+            margin: 0;
         }
     }
 }

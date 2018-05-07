@@ -562,7 +562,7 @@ body {
 }
 
 .Contact-us form .flex-form .contact-flex input {
-  width: 460px;
+  width: 30vw;
   margin: 14px;
   height: 54px;
   border: 1px solid #cccccc;
@@ -592,7 +592,7 @@ body {
   border-radius: 5px;
   background-color: white;
   border: 1px solid #cccccc;
-  width: 459px;
+  width: 30vw;
   height: 220px;
   margin: 0 14px;
   font-size: 24px;
@@ -809,6 +809,34 @@ body {
   .line {
     display: none;
   }
+  .Contact-us {
+    width: auto;
+  }
+  .Contact-us form .flex-form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .Contact-us form .flex-form .contact-flex {
+    margin: 0 auto;
+  }
+  .Contact-us form .flex-form .contact-flex input {
+    width: 50vw;
+  }
+  .Contact-us form .flex-form .textarea-contact {
+    margin: 0 auto;
+  }
+  .Contact-us form .flex-form .textarea-contact textarea {
+    height: 220px;
+    width: 50vw;
+  }
+  .Contact-us form .form-submit input {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -845,6 +873,7 @@ body {
   .Team .flex-team .flex-worker {
     width: 100%;
     text-align: center;
+    margin-bottom: 20px;
   }
   .Team .flex-team .flex-worker h1 {
     font-size: 30px;
@@ -860,27 +889,17 @@ body {
     -ms-flex-pack: center;
         justify-content: center;
   }
-  .Contact-us {
-    width: auto;
-  }
-  .Contact-us form .flex-form {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
+  .Contact-us form .flex-form .contact-flex {
+    margin: 0 auto;
   }
   .Contact-us form .flex-form .contact-flex input {
-    width: calc(100% - 28px);
+    width: 80vw;
+  }
+  .Contact-us form .flex-form .textarea-contact {
+    margin: 0 auto;
   }
   .Contact-us form .flex-form .textarea-contact textarea {
-    height: 220px;
-    width: calc(100% - 28px);
-  }
-  .Contact-us form .form-submit input {
-    margin-top: 30px;
-    margin-bottom: 60px;
+    width: 80vw;
   }
   footer .contact2 {
     display: -ms-flexbox;
@@ -891,6 +910,29 @@ body {
   }
   footer .contact2 .Social-Media-footer {
     margin-right: 18%;
+  }
+}
+
+@media (max-width: 420px) {
+  .title-section h2 {
+    font-size: 34px;
+    font-family: "Montserrat";
+    color: #222222;
+    text-transform: uppercase;
+    line-height: 1.875;
+    text-align: center;
+    padding-top: 60px;
+    margin: 0;
+  }
+  .title-section h3 {
+    font-size: 16px;
+    font-family: "Roboto";
+    color: #777777;
+    font-style: italic;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 40px;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.prefixed.css.map */
