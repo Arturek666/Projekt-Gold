@@ -200,22 +200,23 @@ body {
       flex-wrap: wrap;
 }
 
-.Services1 .service {
+.Services1 figure {
   text-align: center;
   transition: .3s;
+  margin: 0;
 }
 
-.Services1 .service:hover {
+.Services1 figure:hover {
   transform: scale(1.2);
 }
 
-.Services1 .service h3 {
+.Services1 figure h3 {
   font-size: 18px;
   font-family: "Montserrat";
   font-weight: bold;
 }
 
-.Services1 .service p {
+.Services1 figure p {
   font-size: 14px;
   font-family: "Roboto";
   font-weight: 500;
@@ -252,10 +253,10 @@ body {
   transform: scale(1.1);
 }
 
-.Portfolio .Portfolio1 .picture {
+.Portfolio .Portfolio1 figure {
   max-width: 290px;
   max-height: 393px;
-  margin-bottom: 50px;
+  margin: 0 0 50px 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -264,14 +265,14 @@ body {
   overflow: hidden;
 }
 
-.Portfolio .Portfolio1 .picture .title-services {
+.Portfolio .Portfolio1 figure figcaption {
   background-color: white;
   text-align: center;
   width: 290px;
   margin: auto 0;
 }
 
-.Portfolio .Portfolio1 .picture .title-services h1 {
+.Portfolio .Portfolio1 figure figcaption h2 {
   font-family: "Montserrat";
   font-size: 18px;
   font-weight: bold;
@@ -281,7 +282,7 @@ body {
   padding-top: 20px;
 }
 
-.Portfolio .Portfolio1 .picture .title-services p {
+.Portfolio .Portfolio1 figure figcaption p {
   font-size: 14px;
   font-family: "DroidSerif";
   color: #737373;
@@ -443,28 +444,28 @@ body {
       flex-wrap: wrap;
 }
 
-.Team .flex-team .flex-worker h1 {
+.Team .flex-team figure h2 {
   text-align: center;
   font-family: "Montserrat";
   font-weight: Bold;
   font-size: 16px;
 }
 
-.Team .flex-team .flex-worker h4 {
+.Team .flex-team figure h4 {
   text-align: center;
   font-family: "Roboto";
   font-size: 14px;
   color: #777777;
 }
 
-.Team .flex-team .flex-worker .Socialmedia {
+.Team .flex-team figure .Socialmedia {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
 }
 
-.Team .flex-team .flex-worker .Socialmedia .icon-btn {
+.Team .flex-team figure .Socialmedia .icon-btn {
   width: 39px;
   height: 39px;
   border-radius: 50%;
@@ -474,27 +475,27 @@ body {
   cursor: pointer;
 }
 
-.Team .flex-team .flex-worker .Socialmedia .icon-btn .fa {
+.Team .flex-team figure .Socialmedia .icon-btn .fa {
   font-size: 19px;
   transition: 0.3s;
 }
 
-.Team .flex-team .flex-worker .Socialmedia .icon-btn:hover .fa-facebook {
+.Team .flex-team figure .Socialmedia .icon-btn:hover .fa-facebook {
   color: #3b5998;
   transform: scale(1.2);
 }
 
-.Team .flex-team .flex-worker .Socialmedia .icon-btn:hover .fa-twitter {
+.Team .flex-team figure .Socialmedia .icon-btn:hover .fa-twitter {
   color: #00aced;
   transform: scale(1.2);
 }
 
-.Team .flex-team .flex-worker .Socialmedia .icon-btn:hover .fa-pinterest {
+.Team .flex-team figure .Socialmedia .icon-btn:hover .fa-pinterest {
   color: #C92228;
   transform: scale(1.2);
 }
 
-.Team .flex-team .flex-worker .Socialmedia .icon-btn:hover .fa-google-plus {
+.Team .flex-team figure .Socialmedia .icon-btn:hover .fa-google-plus {
   color: #dd4b39;
   transform: scale(1.2);
 }

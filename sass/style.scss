@@ -214,9 +214,10 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    .service {
+    figure {
         text-align: center;
         transition: .3s;
+        margin: 0;
 
         &:hover {
             transform: scale(1.2);
@@ -259,15 +260,16 @@ body {
                 transform: scale(1.1);
             }
         }
-        .picture {
+        figure {
             max-width: 290px;
             max-height: 393px;
-            margin-bottom: 50px;
+            margin: 0 0 50px 0;
             display: flex;
             flex-direction: column;
             background-color: white;
             overflow: hidden;
-            .title-services {
+
+            figcaption {
                 background-color: white;
                 text-align: center;
                 width: 290px;
@@ -275,7 +277,7 @@ body {
 
 
 
-                h1 {
+                h2 {
                     font-family: $montFont;
                     font-size: 18px;
                     font-weight: bold;
@@ -419,8 +421,8 @@ body {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        .flex-worker {
-            h1 {
+        figure {
+            h2 {
                 text-align: center;
                 font-family: $montFont;
                 font-weight: Bold;
