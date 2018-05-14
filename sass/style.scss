@@ -102,7 +102,7 @@ body {
 
 
     .text-hero {
-        h3 {
+        h2 {
             color: white;
             font-family: 'Droid Serif';
             font-size: 50px;
@@ -112,11 +112,10 @@ body {
         }
 
 
-        h2 {
+        h3 {
             font-family: $montFont;
             font-size: 75px;
             text-align: center;
-            padding-top: 20px;
             color: white;
             font-style: italic;
             font-weight: bold;
@@ -210,7 +209,7 @@ body {
     }
 }
 
-.Services1 {
+.services-icons {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -240,10 +239,10 @@ body {
 
 
 
-.Portfolio {
+.portfolio {
     background-color: rgb(249, 249, 249);
 
-    .Portfolio1 {
+    .portfolio-gallery {
         display: flex;
         justify-content: space-between;
         flex-flow: row;
@@ -434,7 +433,7 @@ body {
                 font-size: 14px;
                 color: #777777;
             }
-            .Socialmedia {
+            .social-media {
                 display: flex;
                 justify-content: center;
                 .icon-btn {
@@ -499,7 +498,7 @@ body {
         }
     }
 } //contact Section
-.Contact-us {
+.contact-us {
     background-image: url("../images/backgroun-footer.png");
     background-size: cover;
     .text-top {
@@ -763,7 +762,7 @@ body {
             }
         }
     }
-    #portfolio .Portfolio1 {
+    #portfolio .portfolio-gallery {
         justify-content: space-around;
     }
     #about .timeline-left,
@@ -773,7 +772,7 @@ body {
     .line {
         display: none;
     }
-    .Contact-us {
+    .contact-us {
         width: auto;
         form {
             .flex-form {
@@ -807,8 +806,8 @@ body {
 @media (max-width: 640px) {
 
 
-    .Services {
-        .Services1 {
+    .services {
+        .services-icons {
             .service {
                 width: 100%;
                 margin: 0 auto;
@@ -817,7 +816,7 @@ body {
     }
     #portfolio {
         padding-bottom: 60px;
-        .Portfolio1 {
+        .portfolio-gallery {
             justify-content: center;
         }
     }
@@ -858,7 +857,7 @@ body {
             padding-bottom: 60px;
         }
     }
-    .Banners-section {
+    .banners-section {
         .flex-banner {
             div {
                 width: 100%;
@@ -867,7 +866,7 @@ body {
             }
         }
     }
-    .Contact-us {
+    .contact-us {
 
         form {
             .flex-form {

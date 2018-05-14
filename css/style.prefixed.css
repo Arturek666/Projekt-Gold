@@ -92,7 +92,7 @@ body {
   color: #fed136;
 }
 
-.hero .text-hero h3 {
+.hero .text-hero h2 {
   color: white;
   font-family: 'Droid Serif';
   font-size: 50px;
@@ -101,11 +101,10 @@ body {
   padding-top: 90px;
 }
 
-.hero .text-hero h2 {
+.hero .text-hero h3 {
   font-family: "Montserrat";
   font-size: 75px;
   text-align: center;
-  padding-top: 20px;
   color: white;
   font-style: italic;
   font-weight: bold;
@@ -191,7 +190,7 @@ body {
   margin: 0;
 }
 
-.Services1 {
+.services-icons {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -200,23 +199,23 @@ body {
       flex-wrap: wrap;
 }
 
-.Services1 figure {
+.services-icons figure {
   text-align: center;
   transition: .3s;
   margin: 0;
 }
 
-.Services1 figure:hover {
+.services-icons figure:hover {
   transform: scale(1.2);
 }
 
-.Services1 figure h3 {
+.services-icons figure h3 {
   font-size: 18px;
   font-family: "Montserrat";
   font-weight: bold;
 }
 
-.Services1 figure p {
+.services-icons figure p {
   font-size: 14px;
   font-family: "Roboto";
   font-weight: 500;
@@ -225,11 +224,11 @@ body {
   padding-bottom: 100px;
 }
 
-.Portfolio {
+.portfolio {
   background-color: #f9f9f9;
 }
 
-.Portfolio .Portfolio1 {
+.portfolio .portfolio-gallery {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -241,7 +240,7 @@ body {
   margin-top: 80px;
 }
 
-.Portfolio .Portfolio1 img {
+.portfolio .portfolio-gallery img {
   width: 290px;
   height: 290px;
   margin: 0;
@@ -249,11 +248,11 @@ body {
   transition: .3s;
 }
 
-.Portfolio .Portfolio1 img:hover {
+.portfolio .portfolio-gallery img:hover {
   transform: scale(1.1);
 }
 
-.Portfolio .Portfolio1 figure {
+.portfolio .portfolio-gallery figure {
   max-width: 290px;
   max-height: 393px;
   margin: 0 0 50px 0;
@@ -265,14 +264,14 @@ body {
   overflow: hidden;
 }
 
-.Portfolio .Portfolio1 figure figcaption {
+.portfolio .portfolio-gallery figure figcaption {
   background-color: white;
   text-align: center;
   width: 290px;
   margin: auto 0;
 }
 
-.Portfolio .Portfolio1 figure figcaption h2 {
+.portfolio .portfolio-gallery figure figcaption h2 {
   font-family: "Montserrat";
   font-size: 18px;
   font-weight: bold;
@@ -282,7 +281,7 @@ body {
   padding-top: 20px;
 }
 
-.Portfolio .Portfolio1 figure figcaption p {
+.portfolio .portfolio-gallery figure figcaption p {
   font-size: 14px;
   font-family: "DroidSerif";
   color: #737373;
@@ -458,14 +457,14 @@ body {
   color: #777777;
 }
 
-.Team .flex-team figure .Socialmedia {
+.Team .flex-team figure .social-media {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
 }
 
-.Team .flex-team figure .Socialmedia .icon-btn {
+.Team .flex-team figure .social-media .icon-btn {
   width: 39px;
   height: 39px;
   border-radius: 50%;
@@ -475,27 +474,27 @@ body {
   cursor: pointer;
 }
 
-.Team .flex-team figure .Socialmedia .icon-btn .fa {
+.Team .flex-team figure .social-media .icon-btn .fa {
   font-size: 19px;
   transition: 0.3s;
 }
 
-.Team .flex-team figure .Socialmedia .icon-btn:hover .fa-facebook {
+.Team .flex-team figure .social-media .icon-btn:hover .fa-facebook {
   color: #3b5998;
   transform: scale(1.2);
 }
 
-.Team .flex-team figure .Socialmedia .icon-btn:hover .fa-twitter {
+.Team .flex-team figure .social-media .icon-btn:hover .fa-twitter {
   color: #00aced;
   transform: scale(1.2);
 }
 
-.Team .flex-team figure .Socialmedia .icon-btn:hover .fa-pinterest {
+.Team .flex-team figure .social-media .icon-btn:hover .fa-pinterest {
   color: #C92228;
   transform: scale(1.2);
 }
 
-.Team .flex-team figure .Socialmedia .icon-btn:hover .fa-google-plus {
+.Team .flex-team figure .social-media .icon-btn:hover .fa-google-plus {
   color: #dd4b39;
   transform: scale(1.2);
 }
@@ -522,12 +521,12 @@ body {
   margin: 60px 0 30px 0;
 }
 
-.Contact-us {
+.contact-us {
   background-image: url("../images/backgroun-footer.png");
   background-size: cover;
 }
 
-.Contact-us .text-top {
+.contact-us .text-top {
   font-size: 40px;
   font-family: "Montserrat";
   color: white;
@@ -537,7 +536,7 @@ body {
   padding: 100px 0 13px 0;
 }
 
-.Contact-us .text-bottom {
+.contact-us .text-bottom {
   font-size: 16px;
   font-family: "Roboto";
   color: #777777;
@@ -548,28 +547,28 @@ body {
   margin-bottom: 80px;
 }
 
-.Contact-us form .flex-form {
+.contact-us form .flex-form {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
 }
 
-.Contact-us form .flex-form .contact-flex {
+.contact-us form .flex-form .contact-flex {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
 }
 
-.Contact-us form .flex-form .contact-flex input {
+.contact-us form .flex-form .contact-flex input {
   width: 30vw;
   margin: 14px;
   height: 54px;
   border: 1px solid #cccccc;
 }
 
-.Contact-us form .flex-form .contact-flex input[type="text"] {
+.contact-us form .flex-form .contact-flex input[type="text"] {
   font-size: 14px;
   font-family: "Montserrat";
   color: #bbbbbb;
@@ -579,7 +578,7 @@ body {
   text-align: left;
 }
 
-.Contact-us form .flex-form .contact-flex input[type="email"] {
+.contact-us form .flex-form .contact-flex input[type="email"] {
   font-size: 14px;
   font-family: "Montserrat";
   color: #bbbbbb;
@@ -589,7 +588,7 @@ body {
   text-align: left;
 }
 
-.Contact-us form .flex-form .textarea-contact textarea {
+.contact-us form .flex-form .textarea-contact textarea {
   border-radius: 5px;
   background-color: white;
   border: 1px solid #cccccc;
@@ -606,21 +605,21 @@ body {
   text-align: left;
 }
 
-.Contact-us .form-submit {
+.contact-us .form-submit {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
 }
 
-.Contact-us .form-submit input {
+.contact-us .form-submit input {
   margin-bottom: 115px;
   border: none;
   outline: none;
   transition: 0.6s;
 }
 
-.Contact-us .form-submit input:hover {
+.contact-us .form-submit input:hover {
   background-color: transparent;
   border: 1px solid #fed136;
 }
@@ -801,7 +800,7 @@ body {
     margin-bottom: 80px;
     margin-top: 40px;
   }
-  #portfolio .Portfolio1 {
+  #portfolio .portfolio-gallery {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -813,10 +812,10 @@ body {
   .line {
     display: none;
   }
-  .Contact-us {
+  .contact-us {
     width: auto;
   }
-  .Contact-us form .flex-form {
+  .contact-us form .flex-form {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -824,34 +823,34 @@ body {
     -ms-flex-pack: center;
         justify-content: center;
   }
-  .Contact-us form .flex-form .contact-flex {
+  .contact-us form .flex-form .contact-flex {
     margin: 0 auto;
   }
-  .Contact-us form .flex-form .contact-flex input {
+  .contact-us form .flex-form .contact-flex input {
     width: 50vw;
   }
-  .Contact-us form .flex-form .textarea-contact {
+  .contact-us form .flex-form .textarea-contact {
     margin: 0 auto;
   }
-  .Contact-us form .flex-form .textarea-contact textarea {
+  .contact-us form .flex-form .textarea-contact textarea {
     height: 220px;
     width: 50vw;
   }
-  .Contact-us form .form-submit input {
+  .contact-us form .form-submit input {
     margin-top: 30px;
     margin-bottom: 60px;
   }
 }
 
 @media (max-width: 640px) {
-  .Services .Services1 .service {
+  .services .services-icons .service {
     width: 100%;
     margin: 0 auto;
   }
   #portfolio {
     padding-bottom: 60px;
   }
-  #portfolio .Portfolio1 {
+  #portfolio .portfolio-gallery {
     -ms-flex-pack: center;
         justify-content: center;
   }
@@ -886,23 +885,23 @@ body {
     margin: 0 10px;
     padding-bottom: 60px;
   }
-  .Banners-section .flex-banner div {
+  .banners-section .flex-banner div {
     width: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
   }
-  .Contact-us form .flex-form .contact-flex {
+  .contact-us form .flex-form .contact-flex {
     margin: 0 auto;
   }
-  .Contact-us form .flex-form .contact-flex input {
+  .contact-us form .flex-form .contact-flex input {
     width: 80vw;
   }
-  .Contact-us form .flex-form .textarea-contact {
+  .contact-us form .flex-form .textarea-contact {
     margin: 0 auto;
   }
-  .Contact-us form .flex-form .textarea-contact textarea {
+  .contact-us form .flex-form .textarea-contact textarea {
     width: 80vw;
   }
   footer .contact2 {
