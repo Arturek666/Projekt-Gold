@@ -1,1 +1,1 @@
-https://schulzartur.github.io/Projekt-Gold2/
+https://schulzartur.github.io/Website-Project-Gold2/
